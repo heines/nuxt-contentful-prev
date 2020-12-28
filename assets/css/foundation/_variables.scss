@@ -1,0 +1,33 @@
+$color-facebook: #305097;
+$color-twitter: #00aced;
+$color-base: #fff;
+$color-text: #222;
+
+// @font-face {
+//   font-family: 'xxx';
+//   font-weight: 400;
+//   src:
+//     url('../font/xxx.ttf') format('truetype'),
+//     url('../font/xxx.woff') format('woff');
+// }
+
+$font-ja: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$font-ja-b: "ヒラギノ角ゴ ProN W6", "Hiragino Kaku Gothic ProN W6", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+$font-en: "Helvetica Neue", "Arial", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+
+$break-point-pc-s: 1366px;
+$break-point-tablet-l: 1024px;
+$break-point-tablet-p: 768px;
+$break-point-mobile-p: 414px;
+
+// z-index
+$z-map-reverse: false !default;
+$z-map: (
+  body: true,
+  totop: true,
+  error: true,
+  header: true,
+  modal: true,
+  footer: true,
+) !default;
