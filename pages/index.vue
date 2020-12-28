@@ -3,7 +3,12 @@
   .home__head
     h1 テストprev
   .home__body
-    |{{ posts }}
+    NuxtLink.home__item(
+      v-for="post in posts"
+      :key="post.fields.slug"
+      :to="{ path: `/blog/${post.fields.slug}/` }"
+      )
+      |{{ post.fields.title }}
 </template>
 <script>
 import client from '~/plugins/contentful.js';
@@ -19,4 +24,8 @@ export default {
   },
 };
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.home {
+  padding: 1em;
+}
+</style>
