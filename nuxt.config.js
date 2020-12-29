@@ -10,6 +10,7 @@ export default {
     CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
     CTF_CPA_ACCESS_TOKEN: process.env.CTF_CPA_ACCESS_TOKEN,
     CTF_CPA_HOST: process.env.CTF_HOST,
+    IS_PREV: process.env.IS_PREV,
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
