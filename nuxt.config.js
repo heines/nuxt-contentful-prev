@@ -8,6 +8,8 @@ export default {
     // contentful
     CTF_SPACE_ID: process.env.CTF_SPACE_ID,
     CTF_CDA_ACCESS_TOKEN: process.env.CTF_CDA_ACCESS_TOKEN,
+    CTF_CPA_ACCESS_TOKEN: process.env.CTF_CPA_ACCESS_TOKEN,
+    CTF_CPA_HOST: process.env.CTF_HOST,
   },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
