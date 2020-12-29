@@ -2,15 +2,17 @@
 .category
   .category__title
     h1 カテゴリ一覧
-  .category__body
-    .category__link
+  .blog__info
+    .category__info-link
       NuxtLink(
         to="/"
         )
-        |戻る
-    .category__item(
+        |HOME
+  .category__body
+    NuxtLink.category__item(
       v-for="category in categories"
       :key="category.fields.slug"
+      :to="{ path: `/category/${category.fields.slug}` }"
       )
       |{{ category.fields.name }}
 </template>
@@ -30,5 +32,11 @@ export default {
 <style lang="scss">
 .category {
   padding: 1em;
+  &__info {
+    border-bottom: 1px solid #ccc;
+  }
+  &__body {
+    padding-top: 1em;
+  }
 }
 </style>

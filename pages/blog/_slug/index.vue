@@ -3,10 +3,10 @@
   .blog__title
     h1 {{ post.fields.title }}
   .blog__info
-    NuxtLink.blog__info(
+    NuxtLink.blog__info-link(
       to="/"
       )
-      |戻る
+      |HOME
     .blog__info-in
       .blog__info-date
         |{{ post.fields.date }}
