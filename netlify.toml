@@ -4,5 +4,5 @@
   command = 'npm run generate'
 [context.branch-deploy]
   command = 'npm run generate'
-[context.deploy-preview.environment]
+[context.branch-deploy.environment]
   IS_PREV = 'TRUE'
