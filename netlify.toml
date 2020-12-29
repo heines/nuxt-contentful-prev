@@ -1,0 +1,6 @@
+[context.production]
+  command = 'npm run generate'
+[context.deploy-preview]
+  command = 'npm run generate'
+[context.branch-deploy]
+  command = 'npm run generate'
