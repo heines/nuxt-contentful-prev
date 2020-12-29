@@ -5,4 +5,4 @@
 [context.branch-deploy]
   command = 'npm run generate'
 [context.prev.environment]
-  IS_PREV = true
+  IS_PREV = 'true'
