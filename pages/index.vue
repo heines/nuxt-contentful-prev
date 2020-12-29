@@ -16,6 +16,10 @@
         to="/category/"
         )
         |カテゴリページ
+      NuxtLink.home__item(
+        to="/about/"
+        )
+        |アバウトページ
 </template>
 <script>
 import client from '~/plugins/contentful.js';
