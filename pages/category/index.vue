@@ -38,5 +38,9 @@ export default {
   &__body {
     padding-top: 1em;
   }
+  &__item {
+    display: inline-block;
+    margin-right: 1em;
+  }
 }
 </style>

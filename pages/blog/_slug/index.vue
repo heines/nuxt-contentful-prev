@@ -11,7 +11,11 @@
       .blog__info-date
         |{{ post.fields.date }}
       .blog__info-category
-        |category: {{ post.fields.category.fields.name }}
+        |category:
+        NuxtLink(
+          :to="{ path: `/category/${post.fields.category.fields.slug}` }"
+          )
+          |{{ post.fields.category.fields.name }}
   .blog__body
   |{{ post.fields.detail }}
 </template>
