@@ -1,6 +1,34 @@
 <template lang="pug">
+.category
+  .category__title
+    h1 カテゴリ一覧
+  .category__body
+    .category__link
+      NuxtLink(
+        to="/"
+        )
+        |戻る
+    .category__item(
+      v-for="category in categories"
+      :key="category.fields.slug"
+      )
+      |{{ category.fields.name }}
 </template>
 <script>
-export default {};
+import client from '~/plugins/contentful.js';
+export default {
+  async asyncData({ payload }) {
+    const categories = await client.getEntries({
+      content_type: 'category',
+    });
+    return {
+      categories: categories.items,
+    };
+  },
+};
 </script>
-<style lang="scss"></style>
+<style lang="scss">
+.category {
+  padding: 1em;
+}
+</style>
