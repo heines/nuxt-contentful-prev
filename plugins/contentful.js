@@ -1,5 +1,6 @@
 const contentful = require('contentful');
 // netlify
+console.log(process.env.CONTEXT);
 let isPrev = false;
 if (process.env.CONTEXT === 'prev') {
   isPrev = true;
